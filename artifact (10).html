@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هنرستان استثنایی تربیت ۱ خرم‌آباد</title>
+<style>
+@font-face {
+  font-family: 'BNazanin';
+  src: local('B Nazanin'), url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/Farsi-Digits/Vazir-Regular-FD.ttf');
+}
+body {
+  font-family: 'BNazanin', 'Vazir', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #00263b;
+  line-height: 1.6;
+}
+header {
+  background-color: #00263b;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid #d4af37;
+}
+header img {
+  height: 60px;
+}
+header h1 {
+  font-size: 26px;
+  margin: 0;
+}
+nav {
+  background-color: #d4af37;
+  text-align: center;
+  padding: 8px 0;
+}
+nav a {
+  text-decoration: none;
+  color: #00263b;
+  font-weight: bold;
+  margin: 0 15px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  padding: 20px;
+  text-align: justify;
+}
+section {
+  margin-bottom: 30px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+#lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border: 4px solid white;
+}
+#lightbox:target {
+  display: flex;
+}
+footer {
+  background-color: #00263b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>هنرستان استثنایی تربیت ۱ خرم‌آباد</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Emblem_of_Ministry_of_Education_of_Iran.svg/256px-Emblem_of_Ministry_of_Education_of_Iran.svg.png" alt="لوگوی آموزش و پرورش">
+</header>
+
+<nav>
+  <a href="#home">خانه</a>
+  <a href="#news">اخبار</a>
+  <a href="#gallery">گالری</a>
+  <a href="#form">فرم ثبت اطلاعات</a>
+</nav>
+
+<main>
+  <section id="home">
+    <h2>درباره هنرستان</h2>
+    <p>هنرستان استثنایی تربیت ۱ خرم‌آباد با هدف آموزش مهارت‌های فنی‌–حرفه‌ای به دانش‌آموزان ناشنوا و نابینا فعالیت می‌کند. این هنرستان در خیابان خیرآباد، کوچه ابوذر واقع شده و زیر نظر اداره کل آموزش و پرورش استثنایی استان لرستان اداره می‌شود.</p>
+  </section>
+
+  <section id="news">
+    <h2>اخبار تازه</h2>
+    <ul>
+      <li>آغاز سال تحصیلی جدید با حضور دانش‌آموزان و اولیای گرامی 🌸</li>
+      <li>برگزاری کارگاه آموزشی برای دبیران به سرپرستی آقای رامین امیدی‌نسب</li>
+      <li>افتتاح کارگاه مهارت‌های فناوری ویژه دانش‌آموزان نابینا</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>گالری تصاویر</h2>
+    <div class="gallery">
+      <a href="#img1"><img src="https://balad.ir/api/m/static/images/place/9cZ6BKvXUB4ZBt/photo-1.jpg" alt="نمای هنرستان"></a>
+      <a href="#img2"><img src="https://majidonline.com/assets/uploads/posts/educational-workshop.jpg" alt="کلاس آموزشی"></a>
+      <a href="#img3"><img src="https://balad.ir/api/m/static/images/place/9cZ6BKvXUB4ZBt/photo-2.jpg" alt="حیاط هنرستان"></a>
+    </div>
+
+    <div id="img1" class="lightbox"><a href="#"><img src="https://balad.ir/api/m/static/images/place/9cZ6BKvXUB4ZBt/photo-1.jpg"></a></div>
+    <div id="img2" class="lightbox"><a href="#"><img src="https://majidonline.com/assets/uploads/posts/educational-workshop.jpg"></a></div>
+    <div id="img3" class="lightbox"><a href="#"><img src="https://balad.ir/api/m/static/images/place/9cZ6BKvXUB4ZBt/photo-2.jpg"></a></div>
+  </section>
+
+  <section id="form">
+    <h2>فرم ثبت اطلاعات دانش‌آموز</h2>
+    <p>برای ثبت اطلاعات و مشاهده نمرات خود، بر روی لینک زیر کلیک کنید:</p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeiLiyzIV9RSgJs-HrkgEWxtyQnm1_IbRrg_4v9N1HGx3G3Qg/viewform?usp=header" target="_blank" style="color:#00263b; font-weight:bold;">فرم Google – هنرستان تربیت ۱</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>© که حقوق این وب‌سایت متعلق به هنرستان استثنایی تربیت ۱ خرم‌آباد است | طراحی با همکاری رامین امیدی‌نسب</p>
+</footer>
+
+<script>
+// لایت‌باکس ساده
+const imgs = document.querySelectorAll('.gallery img');
+const lightboxDivs = document.querySelectorAll('.lightbox');
+lightboxDivs.forEach(lb => lb.addEventListener('click', () => window.location.hash = ''));
+</script>
+
+</body>
+</html>
